@@ -1,0 +1,476 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.header {
+    width: 100%;
+    height: 1.28rem;
+    padding-left: .426rem;
+    padding-right: .426rem;
+    padding-top: .266rem;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 111;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 1px rgba(7, 17, 27, .1);
+}
+
+.header-box {
+    width: 100%;
+    font-size: .32rem;
+    line-height: .533rem;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    width: 2.18666667rem;
+    height: .64rem;
+    margin-top: .0533rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.download {
+    line-height: .72rem;
+    color: #71777D;
+    width: 2.026rem;
+    text-align: center;
+    border: 1px solid #71777D;
+    border-radius: .106rem;
+    margin-left: .213rem;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.download span {
+    display: inline-block;
+    width: 100%;
+}
+
+.user {
+    display: inline-block;
+    color: inherit;
+    width: .533rem;
+    height: .533rem;
+    border-radius: .293rem;
+    margin-top: .1067rem;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.search {
+    float: right;
+    font-size: 40px !important;
+    color: #2B333B;
+    letter-spacing: 0;
+    margin-top: .053rem;
+    line-height: .586rem;
+    margin-right: .533rem;
+}
+
+.mk-wrapper {
+    padding-top: 1.28rem;
+    padding-bottom: 1.306rem;
+}
+
+.mk-meau {
+    height: 1.28rem;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    visibility: visible;
+    top: 1.28rem;
+}
+
+.mk-meau ul {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    justify-content: space-around;
+}
+
+.mk-meau ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.mk-meau ul .active a {
+    color: #FF2D50;
+}
+
+.mk-meau .active:before {
+    content: " ";
+    width: .746rem;
+    height: .0533rem;
+    background: #FF2D50;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -.373rem;
+}
+
+.mk-meau ul li a {
+    color: black;
+    display: block;
+    font-size: 28px;
+    letter-spacing: 0;
+    padding-top: .373rem;
+    padding-bottom: .373rem;
+}
+
+/* 轮播开始 */
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 90% !important;
+    margin-left: .08rem;
+    margin-right: .08rem !important;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: .106rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+/* <!-- 轮播图结束 --> */
+.shizhan {
+    background-color: #f3f5f7;
+    padding-left: .533rem;
+    box-shadow: 0 4px 12px 0 rgba(7, 17, 27, .1);
+    overflow: hidden;
+}
+
+.tit {
+    padding-right: .533rem;
+    font-size: 28px;
+    line-height: 1.26rem;
+    padding-top: .16rem;
+}
+
+.icon {
+    display: inline-block;
+    width: .48rem;
+    height: .48rem;
+    background: url(../img/icons.png) no-repeat;
+    background-position-x: center;
+    background-size: .48rem;
+    vertical-align: middle;
+    margin-right: .213rem;
+}
+
+.more {
+    display: block;
+    max-width: 5.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #71777D;
+    font-size: 22px;
+}
+
+.big-card1 {
+    line-height: .426rem;
+    width: 4.26rem;
+    height: 2.88rem;
+    margin-right: .4rem;
+    padding: .37333333rem;
+    padding-top: .426rem;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 1);
+    border-radius: .106rem;
+    background: #1679d3 url(../img/big-card01.jpg) no-repeat right;
+    background-size: 1.92rem !important;
+    box-shadow: 0 4px 16px 0 #0070bb;
+    background-position-y: 1.70666667rem !important;
+}
+
+.big-c-main {
+    /* color: white; */
+    font-size: 30px;
+    line-height: .426rem;
+}
+
+.big-c-main p {
+    margin-top: .106rem;
+    font-size: 22px;
+}
+
+.big-c-main .big-c-bottom {
+    margin-top: .266rem;
+    font-size: 20px;
+}
+
+.big-c-main .big-c-bottom .people {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.big-card2 {
+    background: #1679d3 url(../img/big-card02.jpg) no-repeat right;
+}
+
+/* <!-- 两张卡片结束 --> */
+.shizhan-items {
+    margin-top: .56rem;
+    padding-bottom: .6rem;
+    overflow: hidden;
+}
+
+.shizhan-item {
+    margin-bottom: .6rem;
+    overflow: hidden;
+}
+
+.shizhan-item a {
+    display: block;
+}
+
+.left-img {
+    width: 2.88rem !important;
+    height: 1.92rem;
+    border-radius: .08rem;
+}
+
+.right-txt {
+    width: 5.2rem;
+    margin-left: .32rem;
+}
+
+.sz-itit {
+    font-size: 30px;
+    color: #2B333B;
+    line-height: .53rem;
+    overflow: hidden;
+    /* 超出隐藏 */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.sz-it-t {
+    display: block;
+    font-size: 24px;
+    color: #71777D;
+    line-height: .37rem;
+    margin-top: .21rem;
+}
+
+.price {
+    font-size: 24px;
+    color: #2B333B;
+    line-height: .37rem;
+    margin-top: .21rem;
+}
+
+/* <!-- 实战结束 --> */
+.goodobj {
+    background: #fff;
+}
+
+.big-card3 {
+    box-shadow: 0 4px 16px 0 #ff4545;
+    background: #ff4545 url(../img/big-card03.jpg) no-repeat right;
+}
+
+.big-card4 {
+    box-shadow: 0 4px 16px 0 #00b85a;
+    background: #00b85a url(../img/big-card04.jpg) no-repeat right;
+}
+
+.goodobj-tabs .swiper-slide {
+    width: 93% !important;
+}
+
+/* <!-- 新手好课结束 --> */
+.big-card5 {
+    box-shadow: 0 4px 16px 0 rgba(7, 17, 27, .15);
+    color: black;
+    background: #fff url(../img/big-card05.png) no-repeat right;
+}
+
+.big-card6 {
+    color: black;
+    box-shadow: 0 4px 16px 0 rgba(7, 17, 27, .15);
+    background: #fff url(../img/big-card06.png) no-repeat right;
+}
+
+.big-card7 {
+    color: black;
+    box-shadow: 0 4px 16px 0 rgba(7, 17, 27, .15);
+    background: #fff url(../img/big-card07.png) no-repeat right;
+}
+
+/* <!-- 新手入门结束 --> */
+.icon2 {
+    background-position-y: -2.4rem;
+}
+
+.huati {
+    padding-left: .613rem;
+    padding-right: .613rem;
+    box-shadow: 0 0 0;
+}
+
+.neitui {
+    font-size: 30px;
+    color: #2B333B;
+    line-height: .533rem;
+}
+
+.neitui-txt {
+    font-size: 28px;
+    width: 6.586rem;
+    line-height: .533rem;
+    color: #20CC85;
+}
+
+.neitui-txt span {
+    color: #B7BBBF;
+    font-size: 22px;
+    line-height: .426rem;
+    margin-top: .213rem;
+}
+
+.neitui-img {
+    width: 1.706rem;
+    height: 1.706rem;
+    border-radius: .213rem;
+}
+
+.icon3 {
+    background-position-y: -2.88rem;
+}
+
+.line {
+    border-bottom: 2px dashed #D9DDE1;
+    margin-top: .32rem;
+}
+
+/* 手记开始 */
+.shouji {
+    padding-bottom: .32rem;
+}
+
+.shouji-left {
+    width: 3.813rem;
+}
+
+.shouji-tit {
+    font-size: 28px;
+    line-height: .48rem;
+    color: #2B333B;
+    display: block;
+}
+
+.shouji-b {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.shouji-see {
+    color: #B7BBBF;
+    line-height: .42rem;
+    margin-top: .10rem;
+}
+
+.shouji-tit img {
+    width: 1.70rem;
+    height: 1.70rem;
+    border-radius: .21rem;
+    margin-top: .8rem;
+    background-color: #ccc;
+}
+
+.cut-line {
+    width: .053rem;
+    height: 4.10rem;
+    background-color: #D9DDE1;
+    margin-left: .53rem;
+}
+
+.tit-line {
+    position: relative;
+    background-color: #D9DDE1;
+    height: .026rem;
+    margin-top: .53rem;
+    margin-bottom: .53rem;
+    font-weight: 200;
+    width: 100%;
+}
+
+.shouji-right {
+    width: 4.34rem;
+}
+
+.shouji-r-item {
+    margin-left: 0.5rem;
+}
+
+.yuan-txt {
+    padding-bottom: .32rem;
+    padding-right: .53rem;
+}
+
+.yuan-txt li {
+    margin-top: 0.21rem;
+}
+
+.yuan-txt li a {
+    display: block;
+}
+
+.yuan-txt li a p {
+    line-height: .53rem;
+    font-size: 28px;
+    color: #2B333B;
+    max-height: 10000px;
+}
+
+.yuan-txt li a span {
+    font-size: 22px;
+    line-height: 0.42rem;
+    color: #B7BBBF;
+    display: block;
+}
+
+.icon5 {
+    background-position-y: -3.84rem;
+}
+
+.love .tit {
+    text-align: center;
+}

@@ -1,0 +1,124 @@
+.wrapper{
+    padding-bottom: 1.3rem;
+}
+.midder{
+    background: url(../img/logo-bg.png) no-repeat top center;
+    background-size: 100% auto;
+    padding: .85rem;
+    padding-top: 2.29rem;
+    font-size: .37rem;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: .74rem;
+    margin-left: -.53rem;
+    width: 1.06rem;
+    height: 1.06rem;
+    background: url(../img/dl-logo.png) no-repeat top center;
+    background-size: 100%;
+}
+.urser{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: .21rem;
+}
+.quhao{
+    position: absolute;
+    top: 0;
+    color: #2B333B;
+    font-size: .42rem;
+    line-height: 1.49rem;   
+}
+.quhao span{
+    display: inline-block;
+    text-align: left;
+    width: .93rem;
+}
+.urser input{
+    margin-bottom: .21rem;
+    display: block;
+    width: 100%;
+    color: #787d82;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4D2B333B;
+    border-radius: 0!important;
+    height: 1.49rem;
+    font-size: .42rem;
+    padding-left: 2.13rem;
+}
+.password input{
+    padding-left:0rem;
+}
+.yanzheng{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #B7BBBF;
+    font-size: .42rem;
+    line-height: 1.49rem;
+}
+.yanzheng a{
+    color: #B7BBBF;
+    cursor: default;
+}
+.yanzheng .on{
+    color: #000;
+    cursor: pointer;
+}
+.xieyi{
+    font-size: .32rem;
+    line-height: .32rem;
+    color: #B7BBBF;
+    text-align: center;
+    display:block;
+    width: 100%;
+}
+.denglu{
+    margin-bottom: .21rem;
+    margin-top: .42rem;
+    display: block;
+    color: #fff;
+    background: #F20D0D;
+    font-size: .48rem;
+    line-height: 1.49rem;
+    border-radius: .74rem;
+    text-align: center;
+    box-sizing: content-box;
+}
+.login-denglu{
+    padding-top: .42rem;
+    padding-bottom: .64rem;
+    font-size: .42rem;
+    text-align: center;
+    line-height: .85rem;
+}
+.login-denglu a{
+    color: #F20D0D;
+}
+.wrong{
+    color: #F20D0D;
+    display: none;
+}
+.login-way{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+.qq-login{
+    display: inline-block;
+    width: 1.38rem;
+    height: 1.38rem;
+    border-radius: 50%;
+    background: rgba(43,51,59,.06);
+    margin-right: .42rem;
+    margin-left: .42rem;
+    cursor: pointer;
+}
+.qq-login i{
+    position: relative;
+    color: #b7bbbf;
+    top: .32rem;
+    font-size: .64rem;
+}

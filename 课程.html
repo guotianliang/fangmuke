@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href="img/dl-logo.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/课程.css">
+    <title>课程</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-box">
+            <a href="javascript:;" class="logo fl">
+                <img src="img/logo.png">
+            </a>
+            <a href="jacascript:;" class="download fr">
+                <span>下载客户端</span>
+            </a>
+            <a href="javascript:;" class="user fr">
+                <i class="fa fa-user-circle-o"></i>
+            </a>
+            <i class="search fa fa-search"></i>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <div class="mk-wrapper">
+        <div class="mk-meau" style="visibility: hidden;position: relative;">
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li class="active"><a href="javascript:;">课程</a></li>
+                <li><a href="就业班.html">就业班</a></li>
+                <li><a href="实战.html">实战</a></li>
+                <li><a href="手记.html">手记</a></li>
+                <li><a href="猿问.html">猿问</a></li>
+            </ul>
+        </div>
+        <div class="mk-meau">
+            <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li class="active"><a href="javascript:;">课程</a></li>
+                    <li><a href="就业班.html">就业班</a></li>
+                    <li><a href="实战.html">实战</a></li>
+                    <li><a href="手记.html">手记</a></li>
+                    <li><a href="猿问.html">猿问</a></li>
+            </ul>
+        </div>
+        <div class="kec-wrap clearfix">
+            <ul class="course-left">
+                <li class="course-item chushi  active">
+                    <a href="javascript:;">前端技术</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">前端开发</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">后端开发</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">移动开发</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">算法 <br>&数学</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">云计算<br>&大数据</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">运维<br>&测试</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">数据库</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">UI设计<br>&多媒体</a>
+                </li>
+                <li class="course-item">
+                    <a href="javascript:;">游戏</a>
+                </li>
+            </ul>
+            <div class="course-wrap">
+                <div class="course-right" style="display: block;">
+                    <div class="cour-r-top">
+                        <div class="jichu" id="jishu">
+                            <ul class="clearfix">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cour-r-bottom">
+                            <ul class="cour-b-list">
+                                
+                            </ul>
+                    </div>  
+                </div>
+                <div class="course-right">
+                    <div class="cour-r-top">
+                        <h2 class="cour-tit">基础</h2>
+                        <div class="jichu" id="jichu">
+                            <ul class="clearfix">
+                            </ul>
+                        </div>
+                        <div style="width:100%;height:0.2rem;"></div>
+                        <h2 class="cour-tit">进阶</h2>
+                        <div class="jichu jinjie" id="jinjie">
+                            <ul class="clearfix"></ul>
+                        </div>
+                    </div>
+                    <div class="cour-r-bottom">
+                        <ul class="cour-b-list">
+                            <!-- <li class="cour-b-item">
+                            <div class="cour-b-img">
+                                <img src="img/courb01.jpg">
+                            </div>
+                            <div class="cour-b-txt">
+                                <h2 class="cour-b-ttit">3小时速成 Vue2.x 核心技术</h2>
+                                <p class="cour-b-info">
+                                    <span class="cour-b-info-l">免费课程</span>
+                                    <span class="cour-b-info-r">中级 · 500人在学 </span>
+                                </p>
+                            </div>
+                        </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-right">3</div>
+                <div class="course-right">4</div>
+                <div class="course-right">5</div>
+                <div class="course-right">6</div>
+                <div class="course-right">7</div>
+                <div class="course-right">8</div>
+                <div class="course-right">9</div>
+                <div class="course-right">10</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/rem2.js"></script>
+    <script src="js/课程.js"></script>
+    <script>
+        $(".btn").click(function () {
+            $.ajax({
+                type: "get",
+                url: "mk.json",
+                dataType: "json"
+            }).done(function (data) {
+                var suc = data.jichu
+                var str = ""
+                for (var i in suc) {
+                    str = str + suc[i].id
+                }
+                console.log(str)
+                //    $(".btn").html(str)
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+.kec-wrap{
+    height: 1140px;
+    background-color: #f3f5f7;
+}
+html,body{
+    overflow: hidden;
+}
+.course-left{
+    float: left;
+    background-color: #fff;
+    min-width: 2.08rem;
+    width: 2.08rem;
+    height: 100%;
+    overflow-y: auto;
+    min-height: 100%;
+}
+.course-item{
+    color: #2B333B;
+    border-bottom: 1px solid #D9DDE1;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    line-height: 1;
+    height: 1.6rem;
+    overflow: hidden;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.course-item a{
+    font-size: 24px;
+    color: #2B333B;
+}
+.course-left .active a{
+    color: #F01414;
+}
+.cour-r-top{
+    padding-top: .42rem;
+    padding-bottom: .42rem;
+}
+.course-right{
+    margin-left: 2.13rem;
+    padding-left: .21rem;
+    padding-right: .21rem;
+    height: 100%;
+    overflow-y: auto;
+    display:none;
+}
+.cour-tit{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 48px;
+}
+.jichu{
+    background-color: #fff;
+    padding-top: .42rem;
+    padding-bottom: .42rem;
+    margin-bottom: .42rem;
+}
+.cour-r-tit{
+    width: 33.3%;
+    margin-bottom: .53333333rem;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1;
+    float: left;
+}
+.cour-img img{
+    margin: 0 auto;
+    height: .96rem;
+    width: .96rem;
+    background-color: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: .10666667rem;
+}
+.cour-txt{
+    display: block;
+    font-size: 20px;
+    margin-top: .21rem;
+    color: #2B333B;
+    line-height: .32rem;
+}
+.cour-r-bottom{
+    margin-bottom: 0.42rem;
+}
+.cour-b-item{
+    margin-bottom: .42rem;
+    position: relative;
+}
+.cour-b-img{
+    border-radius: .053rem;
+    height: 1.6rem;
+    width: 2.4rem;
+    background-color: #f9f9f9;
+    position: absolute;
+}
+.cour-b-img img{
+    width: 100%;
+}
+.cour-b-txt{
+    margin-left: 2.72rem;
+    width: 4.73rem;
+    height: 1.6rem;
+}
+.cour-b-ttit{
+    font-size: 28px;
+    max-height: 3333px;
+    line-height: .53rem;
+    color: #2B333B;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.cour-b-info{
+    font-size: 20px;
+    color: #71777D;
+    line-height: .53rem;
+}
+.cour-b-info-l{
+    display: inline-block;
+    margin-right: 0.32rem;
+}
+.course-wrap{
+    display: block;
+    height: 100%;
+}
